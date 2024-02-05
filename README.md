@@ -19,18 +19,19 @@ CineList is an all-encompassing movie watchlist application designed to revoluti
 
 # H2 Product Spec
 # H3 User Stories
--First item Required Must have stories:
+-Required Must have stories:
 -Search
 -Review option
 -Login and Sign in
 -Saved option
 -Categories
--Recommendation
--Where to watch
 -Data Privacy & Security
 -Profile
 
--Second item Optional Nice-to-have Stories:
+-Optional Nice-to-have Stories:
+-Recommendation
+-Where to watch
+
 
 # H3 Screens:
 1. Home Screen (This is where all the recommended, most popular, and coming soon will be)
@@ -55,8 +56,14 @@ CineList is an all-encompassing movie watchlist application designed to revoluti
 - Settings
 
 Flow Navigation (Screen to Screen):
+- Home >>> To the recommended, top picks page.
+- Saved >> Jumps to a list of movies that were saved by the user.
+- Catalog >> Goes to a list of movies in Alphabetical Order.
+- Categorie >> Jumps to a Queue list.
+- Rates and Reviews >> Goes to a text field to be modified.
+- Settings >> Toggle settings
 
-# H3 Wire Frams
+# H3 Wire Frames
 
 # H3 Digital wireframs & Mockups
 
