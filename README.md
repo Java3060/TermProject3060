@@ -6,6 +6,16 @@
 
 # H1 Overview
 
+Description
+Tracks movies/shows a user watches and recommends new shows/movies based off their preferences
+
+App Evaluation
+Category: Entertainment
+Story: Analyzes users movie taste, and refers them to other movies with similar characteristics. The user can also add ratings to movies to help other users.
+Market: Any individual could choose to use this app, and to keep it a safe environment, 
+Habit: This app could be used as often or unoften as the user wanted depending on how often they watch movies, and what exactly they're looking for.
+Scope: First we would start with asking questions about what type of movies the user likes to watch, then perhaps this could evolve into a movie sharing application as well to broaden its usage. Large potential for use with Netflix, Hulu, or other movie streaming applications.
+
 # H2 Description
 CineList is an all-encompassing movie watchlist application designed to revolutionize the way movie enthusiasts discover, organize, and engage with films. It offers a personalized platform where users can curate their watchlists, receive real-time notifications for movie availabilities in theaters or on streaming services, and access comprehensive viewing options to plan their movie-watching experiences. Moreover, the application fosters a vibrant community by allowing users to rate and review films, helping others navigate their cinematic journey. With its intuitive design and user-centric features, CineList is the ultimate destination for anyone looking to enhance their movie-watching routine, ensuring they never miss out on must-see films while connecting with a community of fellow movie lovers.
 
