@@ -64,7 +64,9 @@ Flow Navigation (Screen to Screen):
 - Settings >> Toggle settings
 
 # H3 Wire Frames
+[3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip](https://github.com/Java3060/TermProject3060/files/14234411/3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip)
 
 # H3 Digital wireframs & Mockups
+<img width="896" alt="Screenshot 2024-02-11 at 6 12 01 PM" src="https://github.com/Java3060/TermProject3060/assets/85651849/73df479e-d392-4419-8300-ce1e24ba56bd">
 
 # H3 Interactive Prototype
