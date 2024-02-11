@@ -70,4 +70,3 @@ Flow Navigation (Screen to Screen):
 <img width="896" alt="Screenshot 2024-02-11 at 6 12 01 PM" src="https://github.com/Java3060/TermProject3060/assets/85651849/73df479e-d392-4419-8300-ce1e24ba56bd">
 
 # H3 Interactive Prototype
-<img width="896" alt="Screenshot 2024-02-11 at 6 12 01 PM" src="https://github.com/Java3060/TermProject3060/assets/85651849/85a94e14-6846-46ef-82da-e7ee0af46885">
