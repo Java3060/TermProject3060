@@ -74,7 +74,74 @@ Flow Navigation (Screen to Screen):
 - Settings >> Toggle settings
 
 # H3 Wire Frames
+[3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip](https://github.com/Java3060/TermProject3060/files/14234411/3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip)
 
 # H3 Digital wireframs & Mockups
+<img width="896" alt="Screenshot 2024-02-11 at 6 12 01 PM" src="https://github.com/Java3060/TermProject3060/assets/85651849/73df479e-d392-4419-8300-ce1e24ba56bd">
 
 # H3 Interactive Prototype
+
+# Schema
+## Models
+### User 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | UserID        | Number   | User ID Number      |
+   | Email         | String   | Email Address       |
+   | FriendsList   | Array    | List of Friends     |
+   
+### Movie 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | MovieID       | Number   | Movie ID Number     |
+   | Title         | String   | Movie Title         |
+   | Genre         | String   | Movie Genre         |
+   | Release date  | DateTime | Movie Release Date  |
+   | Overview      | String   | Movie Overview      |
+   | Rating        | Number   | Movie Rating 1-10   |
+   | TMDBID        | Number   | Movie Databse integration ID|
+
+   ### Watchlist 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | WListID       | Number   | Watchlist Movie ID #|
+   | MovieID       | Number   | Movie ID Number     |
+   | UserID        | Number   | User ID Number      |
+   | Watched       | Boolean  | Watched/Unwatched   |
+   | AddedDate     | DateTime | Date Movie added to list  |
+
+   ### Reccomendations 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | RecID         | Number   | Reccomendation ID # |
+   | MovieID       | Number   | Movie ID Number     |
+   | UserID        | Number   | User ID Number      |   
+   | RecDate       | DateTime | Date Movie added to list |
+
+   ### Review 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | ReviewID      | Number   | Review ID #         |
+   | MovieID       | Number   | Movie ID Number     |
+   | UserID        | Number   | User ID Number      |   
+   | RevDate       | DateTime | Date Review was made| 
+   | Rating        | Number   | Movie Rating 1-10   |
+   | Comments      | Array    | Review Comments     |
+   
+   ### Friends 
+
+   | Property      | Type     | Description         |
+   | ------------- | -------- | --------------------|
+   | SocialID      | Number   | Social Interaction ID# |
+   | FriendCount   | Number   | Number of Friends   |
+   | UserID        | Number   | User ID Number      |   
+   | RequestSent   | Number   | Amount of friend request |
+   | Status        | String   | Pending,Accepted,Declined|  
+   | FriendList    | Array    | List of Friends     |
+   
+  
