@@ -69,7 +69,7 @@ Flow Navigation (Screen to Screen):
 - Home >>> To the recommended, top picks page.
 - Saved >> Jumps to a list of movies that were saved by the user.
 - Catalog >> Goes to a list of movies in Alphabetical Order.
-- Categorie >> Jumps to a Queue list.
+- Categories >> Jumps to a Queue list.
 - Rates and Reviews >> Goes to a text field to be modified.
 - Settings >> Toggle settings
 
@@ -82,6 +82,45 @@ Flow Navigation (Screen to Screen):
 # H3 Interactive Prototype
 
 # Schema
+
+## List of network requests by screen
+
+- Home Feed Screen
+(Read/GET) Query all movies that is recommended for user
+(Create/POST) Create a new comment on a movie
+
+- Saved
+  (Read/GET) Query all movies that is saved by the user
+
+- Categories
+  (Read/GET) Query all categories and all movies in a specific category when that category is clicked on
+
+  - Create Comment Screen
+  (Create/POST) Create a new comment
+
+  - Settings Screen
+  (Update/PUT) Update user profile image
+  (Update/PUT) Update user email and notification preferences
+  (Update/PUT) Update user email or phone number
+
+### Existing API endpoiints
+
+| HTTP Verb | Endpoint | Description             |
+|-----------|----------|-------------------------|
+| POST      | String   | Add favorite            |
+| POST      | String   | Add to Watchlist        |
+| POST      | String   | Add friend              |
+| POST      | String   | Add Review              |
+| GET       | String   | List of Favorite Movies |
+| GET       | String   | List of recommendations |
+| GET       | String   | Movie Categories        |
+| GET       | String   | List of friends         |
+| GET       | String   | List of movie reviews   |
+| DELETE    | String   | Delete Review           |
+
+
+  
+
 ## Models
 ### User 
 
