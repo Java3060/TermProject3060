@@ -17,23 +17,49 @@ CineList is an all-encompassing movie watchlist application designed to revoluti
 - Scope: The scope of the application is ambitious, aiming to provide a one-stop solution for all aspects of movie discovery, organization, and community engagement. It integrates various functionalities, from personalized recommendations and real-time availability alerts to social features like ratings and reviews. The app seeks to offer enough depth to satisfy dedicated movie buffs while remaining accessible to casual viewers, balancing complexity with user-friendliness to cater to a wide audience.
 
 
-# H2 Product Spec
-# H3 User Stories
--Required Must have stories:
--Search
--Review option
--Login and Sign in
--Saved option
--Categories
--Data Privacy & Security
--Profile
+# H4 Product Spec
+# H5 User Stories
+### Required Must-Have Stories:
 
--Optional Nice-to-have Stories:
--Recommendation
--Where to watch
+1. **Search:**
+   - Search for movies based on titles, genres, or actors.
+   - The search results are to be relevant and quickly displayed.
 
+2. **Review Option:**
+   - Able to leave reviews and ratings for movies.
+   - See reviews and ratings from other users to make informed decisions.
 
-# H3 Screens:
+3. **Login and Sign In:**
+   - Able to create an account and log in securely.
+   - Watchlists and reviews to be associated with user account.
+
+4. **Saved Option:**
+   - The ability to save movies to user watchlist for future viewing.
+   - Easily access user's saved watchlist.
+
+5. **Categories:**
+   - Movies to be categorized by genres, release dates, or popularity.
+   - Explore curated lists or recommendations based on my preferences.
+
+6. **Data Privacy & Security:**
+   - Assurance that user personal data is secure and handled with privacy.
+   - Control over who can view user's reviews and watchlists.
+
+7. **Profile:**
+   - Have a personalized profile where the user can manage their preferences.
+   - Can track their movie-watching history and achievements.
+
+### Optional Nice-to-Have Stories:
+
+8. **Recommendation:**
+   - Receive movie recommendations based on user watch history and preferences.
+   - Discover hidden gems or new releases that align with user taste.
+
+9. **Where to Watch:**
+   - Information on where the user can watch a particular movie, whether in theaters or on streaming platforms.
+   - Receive notifications when a movie from user watchlist becomes available on a streaming service.
+
+# H6 Screens:
 1. Home Screen (This is where all the recommended, most popular, and coming soon will be)
 2. Log-in screen (This will allow users to log in to their account)
 3. Sign Up Screen (This will allow users to make their account)
@@ -47,7 +73,7 @@ CineList is an all-encompassing movie watchlist application designed to revoluti
 11. Profile Screen (Allows users to upload a photo and fill in information that is interesting to them and others)
 
 
-# H3 Navigation:
+# H7 Navigation:
 - Home
 - Saved
 - Catalog
@@ -63,13 +89,12 @@ Flow Navigation (Screen to Screen):
 - Rates and Reviews >> Goes to a text field to be modified.
 - Settings >> Toggle settings
 
-# H3 Wire Frames
+# H8 Wire Frames
 [3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip](https://github.com/Java3060/TermProject3060/files/14234411/3024x4032.jpeg.892a42bfe6f74742b186d20d3ab4c984.large.zip)
 
-# H3 Digital wireframs & Mockups
+# H9 Digital wireframs & Mockups
 <img width="896" alt="Screenshot 2024-02-11 at 6 12 01 PM" src="https://github.com/Java3060/TermProject3060/assets/85651849/73df479e-d392-4419-8300-ce1e24ba56bd">
 
-# H3 Interactive Prototype
 
 # Schema
 ## Models
