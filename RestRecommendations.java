@@ -13,7 +13,8 @@ public class RestRecommendations {
 private List<DocumentReference> assignedUsers;
     private DocumentReference createdBy;
 
-    public RestRecommendations(List<DocumentReference> assignedUsers, DocumentReference createdBy) {
+    public RestRecommendations(String recId, String title, String description, int movieID, Timestamp recDate, List<DocumentReference> assignedUsers, DocumentReference createdBy) {
+        super(recId, title, description, movieID, recDate);
         this.assignedUsers = assignedUsers;
         this.createdBy = createdBy;
     }
