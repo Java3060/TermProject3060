@@ -128,7 +128,7 @@ Flow Navigation (Screen to Screen):
    | Watched       | Boolean  | Watched/Unwatched   |
    | AddedDate     | DateTime | Date Movie added to list  |
 
-   ### Reccomendations 
+   ### Recommendations 
 
    | Property      | Type     | Description         |
    | ------------- | -------- | --------------------|
