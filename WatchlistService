@@ -1,0 +1,94 @@
+package Services;
+
+import Util.Utility;
+import com.google.api.core.ApiFuture;
+import com.google.cloud.firestore.*;
+import com.google.firebase.cloud.FirestoreClient;
+import com.google.firebase.database.annotations.Nullable;
+import model.Applications.Applications;
+import model.Users;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+
+package Services;
+
+@Service
+    public class WListService {
+         private Firestore firestore;
+
+        public WListService(){
+            this.firestore = FirestoreClient.getFirestore();
+        }
+
+        @Nullable
+        private Watchlist documentSnapshotToTask(DocumentSnapshot document) throws ExecutionException, InterruptedException {
+            if (document.exists()) {
+                List<Users> Watched = new ArrayList<>();
+                Users createdBy = null;
+
+                // Retrieve assigned users details
+                List<DocumentReference> WatchList = (List<DocumentReference>) document.get("assignedUsers");
+                for(DocumentReference userRef : WListID) {
+                    DocumentSnapshot userSnapshot = userRef.get().get();
+                    if (userSnapshot.exists()) {
+                       MovieID.add(userSnapshot.toObject(Users.class));
+                    }
+                }
+
+                // Retrieve createdBy user details
+                DocumentReference userRef = (DocumentReference) document.get("createdBy");
+                if (userRef != null) {
+                    DocumentSnapshot userSnapshot = userRef.get().get();
+                    if (userSnapshot.exists()) {
+                        createdBy = userSnapshot.toObject(Users.class);
+                    }
+                }
+            }
+            return null;
+        }
+
+        @Nullable
+        private List<Applications> getWList(Query query) throws InterruptedException, ExecutionException {
+            ApiFuture<QuerySnapshot> future = query.get();
+            List<QueryDocumentSnapshot> documentSnapshots = future.get().getDocuments();
+            List<Applications> WatchList = documentSnapshots.size() == 0 ? null : new ArrayList<>();
+
+            for(DocumentSnapshot document : documentSnapshots)
+            {
+                Watchlist.add(documentSnapshotToTask(document));
+            }
+
+            return WatchList;
+        }
+
+        public List<Watchlist> getAllWatchList() throws ExecutionException, InterruptedException
+        {
+            CollectionReference WatchlistCollection = firestore.collection("WatchList");
+            return getWatchList(WatchlistCollection);
+        }
+
+        public Watchlist getWListID(String ApplicationsId) throws ExecutionException, InterruptedException {
+            DocumentReference ApplicationsRef = firestore.collection("WatchList").document(ApplicationsId);
+            return documentSnapshotToTask(WatchListRef.get().get());
+        }
+
+        public List<Applications> getApplicationsByCreator(String createdBy) throws ExecutionException, InterruptedException {
+            DocumentReference userRef = Utility.retrieveDocumentReference("Users", createdBy);
+            Query query = firestore.collection("Applications").whereEqualTo("createdBy", userRef);
+            return getApplicationsList(query);
+
+        }
+
+        public List<Applications> getApplicationsByStatus(String status) throws ExecutionException, InterruptedException {
+            Query query = firestore.collection("Applications").whereEqualTo("status", status);
+            return getApplicationsList(query);
+        }
+
+
+    }
+
+
+}
